@@ -13,6 +13,7 @@ From this [tweet](https://twitter.com/chriseidhof/status/1280433133813456896) by
 
 - [CheatSheet](https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet)
 - [Fucking SwiftUI](https://fuckingswiftui.com)
+- [SwiftUI Property Wrappers](https://swiftuipropertywrappers.com)
 - [SwiftUIX](https://github.com/SwiftUIX/SwiftUIX)
 - [SwiftUI-Introspect](https://github.com/siteline/SwiftUI-Introspect)
 - [SVG to SwiftUI](https://quassummanus.github.io/SVG-to-SwiftUI/)
