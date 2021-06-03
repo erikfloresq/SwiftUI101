@@ -20,6 +20,7 @@
 		08E428CC266858F2002F1764 /* CharacterDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E428CB266858F2002F1764 /* CharacterDummy.swift */; };
 		08E428CE26685E67002F1764 /* Character.json in Resources */ = {isa = PBXBuildFile; fileRef = 08E428CD26685E67002F1764 /* Character.json */; };
 		08E428D0266863A1002F1764 /* MyCustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E428CF266863A1002F1764 /* MyCustomShape.swift */; };
+		08E428D426686AD4002F1764 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E428D326686AD4002F1764 /* AnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		08E428CB266858F2002F1764 /* CharacterDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDummy.swift; sourceTree = "<group>"; };
 		08E428CD26685E67002F1764 /* Character.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Character.json; sourceTree = "<group>"; };
 		08E428CF266863A1002F1764 /* MyCustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomShape.swift; sourceTree = "<group>"; };
+		08E428D326686AD4002F1764 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +72,11 @@
 		087B669E2662E405000CA78E /* SwiftUI101 */ = {
 			isa = PBXGroup;
 			children = (
-				08E428D2266864E1002F1764 /* Examples */,
-				08E428D1266864D1002F1764 /* Data */,
 				087B669F2662E405000CA78E /* SwiftUI101App.swift */,
 				087B66B42662E55E000CA78E /* MainView.swift */,
 				08E428C726685455002F1764 /* MainViewModel.swift */,
+				08E428D2266864E1002F1764 /* Examples */,
+				08E428D1266864D1002F1764 /* Data */,
 				087B66A32662E406000CA78E /* Assets.xcassets */,
 				087B66AD2662E406000CA78E /* Info.plist */,
 				087B66B32662E531000CA78E /* CoreData */,
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				08E428CF266863A1002F1764 /* MyCustomShape.swift */,
+				08E428D326686AD4002F1764 /* AnimationView.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E428CC266858F2002F1764 /* CharacterDummy.swift in Sources */,
+				08E428D426686AD4002F1764 /* AnimationView.swift in Sources */,
 				087B66AC2662E406000CA78E /* SwiftUI101.xcdatamodeld in Sources */,
 				087B66B52662E55E000CA78E /* MainView.swift in Sources */,
 				087B66A92662E406000CA78E /* Persistence.swift in Sources */,
