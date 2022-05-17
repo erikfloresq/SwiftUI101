@@ -15,7 +15,7 @@ struct AnimationView: View {
             VStack(spacing: 10) {
                 Text("Hello, World!")
                     .scaleEffect(animate ? 1 : 1.5)
-                    .animation(.spring())
+                    .animation(.spring(), value: animate)
                 Button(action: {
                     animate.toggle()
                 }, label: {
@@ -50,7 +50,7 @@ struct BottomSheet<Content: View>: View {
         }
         .frame(maxWidth: .infinity, maxHeight: 400)
         .offset(CGSize(width: 0, height: presented ? 300 : 610))
-        .animation(.spring())
+        .animation(.spring(), value: presented)
     }
 }
 

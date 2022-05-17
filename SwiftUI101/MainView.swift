@@ -40,10 +40,16 @@ struct SettingsButton: View {
             Image(systemName: "gearshape")
         })
         .sheet(isPresented: $settingPresented, content: {
-            ZStack {
-                Color(.systemRed).ignoresSafeArea()
-                Text("Hello")
+            VStack(spacing: 5) {
+                Image("rick")
+                    .scaledToFill()
+                Text("Wubba Lubba Dub Dub!")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .marquee(duration: 3)
             }
+            .background(.black)
+            .ignoresSafeArea()
         })
     }
 }
@@ -53,14 +59,20 @@ struct CellView: View {
 
     var body: some View {
         HStack(spacing: 10.0) {
-            Image(systemName: "applelogo")
-                .resizable()
-                .scaledToFit()
-                .frame(maxWidth: 100, maxHeight: 100)
+            AsyncImage(url: URL(string: character.image)) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 150, height: 150)
+            } placeholder: {
+                Image("placeholder")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 150, height: 150)
+            }
             Text(character.name)
                 .font(.title2)
-                .padding()
-        }.padding()
+        }
     }
 }
 
@@ -70,10 +82,17 @@ struct DetailView: View {
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {
-                Image(systemName: "applelogo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth: .infinity, maxHeight: 300)
+                AsyncImage(url: URL(string: character.image)) { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(maxWidth: .infinity, maxHeight: 300)
+                } placeholder: {
+                    Image("placeholder")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(maxWidth: .infinity, maxHeight: 300)
+                }
                 VStack {
                     Spacer()
                     HStack {
@@ -84,7 +103,8 @@ struct DetailView: View {
                     }
 
                 }.frame(maxWidth: .infinity)
-            }.frame(maxWidth: .infinity, maxHeight: 300)
+            }
+            .frame(maxWidth: .infinity, maxHeight: 300)
             Text("lorem ipsum").padding()
             Spacer()
         }
