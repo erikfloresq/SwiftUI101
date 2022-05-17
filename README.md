@@ -16,6 +16,6 @@ From this [tweet](https://twitter.com/chriseidhof/status/1280433133813456896) by
 - [SwiftUI Property Wrappers](https://swiftuipropertywrappers.com)
 - [SwiftUIX](https://github.com/SwiftUIX/SwiftUIX)
 - [SwiftUI-Introspect](https://github.com/siteline/SwiftUI-Introspect)
-- [SVG to SwiftUI](https://quassummanus.github.io/SVG-to-SwiftUI/)
+- [SVG to SwiftUI](https://quassum.github.io/SVG-to-SwiftUI/)
 - [Design and Code](https://www.youtube.com/channel/UCTIhfOopxukTIRkbXJ3kN-g)
 - [RickAndMortyAPI](https://github.com/erikfloresq/RickAndMortyAPI)
