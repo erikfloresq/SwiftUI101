@@ -13,8 +13,9 @@ struct SwiftUI101App: App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            AsyncView()
+//            MainView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
